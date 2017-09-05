@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ivan.desafioandroid.NegocioActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nombreActividad"
+        android:layout_alignParentTop="true"
+        android:hint="@string/nombreNegocio"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TipoActividad"
+        android:layout_below="@+id/nombreActividad"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/nombreActividad"
+        android:hint="@string/descripcionNegocio" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/orgActividad"
+        android:layout_below="@+id/TipoActividad"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/orgNegocio" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/PersonaActividad"
+        android:hint="@string/personaNegocio"
+        android:layout_below="@+id/orgActividad"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/ValorNegocio"
+        android:layout_below="@+id/PersonaActividad"
+        android:hint="@string/valorNegocio"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <DatePicker
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/fechaCierre"
+        android:startYear="2017"
+        android:layout_below="@+id/ValorNegocio"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/fecha_de_cierre"
+        android:id="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/fechaCierre"
+        android:layout_toStartOf="@+id/fechaCierre"
+        android:layout_alignTop="@+id/fechaCierre"
+        android:elegantTextHeight="false"
+        android:textAlignment="center" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/estado_del_n_negocio"
+        android:id="@+id/textView2"
+        android:elegantTextHeight="false"
+        android:layout_below="@+id/fechaCierre"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:layout_toStartOf="@+id/spinner"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar"
+        android:id="@+id/botonNegocio"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+</RelativeLayout>

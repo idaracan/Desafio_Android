@@ -11,4 +11,26 @@
     <string name="Negocio">Negocio</string>
     <string name="Actividades">Actividades</string>
     <string name="name">Gestor de Actividades</string>
+    <!-- Vista Persona -->
+    <string name="nombrePersona">Nombre</string>
+    <string name="telefonoPersona">Telefono</string>
+    <string name="correoPersona">Correo</string>
+    <string name="enviar">Agregar</string>
+    <!-- Vista Organizacion -->
+    <string name="nombreOrg">Nombre</string>
+    <string name="direccionOrg">Direccion</string>
+    <string name="nombreNegocio">Titulo del Negocio</string>
+    <string name="descripcionNegocio">Descripcion</string>
+    <string name="orgNegocio">Organización</string>
+    <string name="personaNegocio">Persona</string>
+    <!-- Vista Negocio -->
+    <string name="valorNegocio">Valor</string>
+    <string name="fecha_de_cierre">Fecha de Cierre</string>
+    <string name="estado_del_n_negocio">Estado del \n negocio</string>
+    <!-- Vista Negocio -->
+    <string name="tipoActividad">Tipo</string>
+    <string name="descripci_n_de_la_actividad">Descripción de la Actividad</string>
+    <string name="negocioActividad">Negocio</string>
+    <string name="fecha">Fecha</string>
+    <string name="hora">Hora</string>
 </resources>
