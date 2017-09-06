@@ -12,22 +12,22 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="49dp"
         android:id="@+id/nombreOrg"
+        android:hint="@string/nombreOrg"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:hint="@string/nombreOrg" />
+        android:paddingBottom="40px" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="69dp"
         android:id="@+id/DireccionOrg"
         android:hint="@string/direccionOrg"
-        android:layout_below="@+id/nombreOrg"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/nombreOrg" />
+        android:layout_below="@+id/nombreOrg"
+        android:layout_alignEnd="@+id/nombreOrg"
+        android:paddingBottom="40px" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -35,18 +35,19 @@
         android:inputType="phone"
         android:ems="10"
         android:id="@+id/TelefonoOrg"
+        android:hint="@string/telefonoPersona"
         android:layout_below="@+id/DireccionOrg"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:hint="@string/telefonoPersona" />
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/DireccionOrg"
+        android:paddingBottom="40px" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/botonOrg"
-        android:layout_below="@+id/TelefonoOrg"
+        android:text="@string/enviar"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
-        android:text="@string/enviar" />
+        android:layout_marginBottom="71dp" />
 
 </RelativeLayout>

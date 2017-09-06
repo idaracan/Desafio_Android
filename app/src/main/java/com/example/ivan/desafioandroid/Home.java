@@ -66,9 +66,7 @@ public class Home extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home) {
-
-        } else if (id == R.id.nav_persona) {
+        if (id == R.id.nav_persona) {
             Intent personas = new Intent(this, PersonasActivity.class);
             startActivity(personas);
         } else if (id == R.id.nav_org) {
