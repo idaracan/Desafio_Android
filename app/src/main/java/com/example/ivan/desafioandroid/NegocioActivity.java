@@ -72,6 +72,7 @@ public class NegocioActivity extends AppCompatActivity implements View.OnClickLi
                     textoFecha.setText(dayOfMonth+"/"+monthOfYear+"/"+year);
                 }
             },dia,mes,anno);
+            datePickerDialog.updateDate(anno,mes,dia);
             datePickerDialog.show();
         }
     }

@@ -64,6 +64,7 @@ public class ActividadesActivity extends AppCompatActivity implements View.OnCli
                     textoFecha.setText(dayOfMonth+"/"+monthOfYear+"/"+year);
                 }
             },dia,mes,anno);
+            datePickerDialog.updateDate(anno,mes,dia);
             datePickerDialog.show();
         }else if (v == guardar) {
             if (descripcion.getText().toString().isEmpty() ||
