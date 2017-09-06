@@ -1,5 +1,6 @@
 package com.example.ivan.desafioandroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -66,15 +67,19 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            // Handle the camera action
+
         } else if (id == R.id.nav_persona) {
-
+            Intent personas = new Intent(this, PersonasActivity.class);
+            startActivity(personas);
         } else if (id == R.id.nav_org) {
-
+            Intent organizacion = new Intent(this, OrganizacionActivity.class);
+            startActivity(organizacion);
         } else if (id == R.id.nav_negocio) {
-
+            Intent negocio = new Intent(this,NegocioActivity.class);
+            startActivity(negocio);
         } else if (id == R.id.nav_actividad){
-
+            Intent actividades = new Intent(this, ActividadesActivity.class);
+            startActivity(actividades);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

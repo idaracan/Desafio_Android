@@ -14,20 +14,58 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/nombreActividad"
-        android:layout_alignParentTop="true"
-        android:hint="@string/descripci_n_de_la_actividad"
+        android:id="@+id/NegocioActividad"
+        android:hint="@string/negocioActividad"
+        android:layout_below="@+id/personaActividad"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignEnd="@+id/personaActividad" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/TipoActividad"
-        android:layout_below="@+id/nombreActividad"
+        android:id="@+id/textoFecha"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/nombreActividad"
-        android:hint="@string/tipoActividad" />
+        android:layout_alignEnd="@+id/textoHora"
+        android:hint="@string/fecha" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hora"
+        android:id="@+id/timepicker"
+        android:layout_below="@+id/datepicker"
+        android:layout_alignEnd="@+id/NegocioActividad" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar"
+        android:id="@+id/botonActividad"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/NombreActividad"
+        android:layout_alignParentTop="true"
+        android:hint="@string/descripci_n_de_la_actividad"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipoActividad"
+        android:hint="@string/tipoActividad"
+        android:layout_below="@+id/NombreActividad"
+        android:layout_alignEnd="@+id/NombreActividad"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -35,9 +73,9 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/orgActividad"
-        android:layout_below="@+id/TipoActividad"
+        android:layout_below="@+id/tipoActividad"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
+        android:layout_alignEnd="@+id/tipoActividad"
         android:hint="@string/orgNegocio" />
 
     <EditText
@@ -45,57 +83,31 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/PersonaActividad"
-        android:hint="@string/personaNegocio"
+        android:id="@+id/personaActividad"
         android:layout_below="@+id/orgActividad"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignEnd="@+id/orgActividad"
+        android:hint="@string/personaActividad" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/NegocioActividad"
-        android:layout_below="@+id/PersonaActividad"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textoHora"
+        android:hint="Seleccionar Hora"
+        android:layout_alignBaseline="@+id/timepicker"
+        android:layout_alignBottom="@+id/timepicker"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/PersonaActividad"
-        android:hint="@string/negocioActividad" />
-
-    <DatePicker
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:id="@+id/datePicker"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/fecha"
-        android:id="@+id/textView3"
-        android:layout_alignTop="@+id/datePicker"
-        android:layout_alignParentStart="true"
-        android:layout_alignBottom="@+id/datePicker"
-        android:layout_toStartOf="@+id/datePicker"
+        android:layout_toStartOf="@+id/timepicker"
         android:textAlignment="center" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hora"
-        android:id="@+id/timepicker"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/datePicker"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/enviar"
-        android:id="@+id/botonActividad"
-        android:layout_below="@+id/timepicker"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp" />
+        android:text="Seleccionar Fecha"
+        android:id="@+id/datepicker"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/timepicker" />
 
 </RelativeLayout>

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/nombreActividad"
+        android:id="@+id/nombreNegocio"
         android:layout_alignParentTop="true"
         android:hint="@string/nombreNegocio"
         android:layout_alignParentStart="true"
@@ -23,10 +23,10 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/TipoActividad"
-        android:layout_below="@+id/nombreActividad"
+        android:id="@+id/DescripcionNegocio"
+        android:layout_below="@+id/nombreNegocio"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/nombreActividad"
+        android:layout_alignEnd="@+id/nombreNegocio"
         android:hint="@string/descripcionNegocio" />
 
     <EditText
@@ -34,8 +34,8 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/orgActividad"
-        android:layout_below="@+id/TipoActividad"
+        android:id="@+id/orgNegocio"
+        android:layout_below="@+id/DescripcionNegocio"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:hint="@string/orgNegocio" />
@@ -45,9 +45,9 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/PersonaActividad"
+        android:id="@+id/PersonaNegocio"
         android:hint="@string/personaNegocio"
-        android:layout_below="@+id/orgActividad"
+        android:layout_below="@+id/orgNegocio"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 
@@ -57,40 +57,29 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/ValorNegocio"
-        android:layout_below="@+id/PersonaActividad"
+        android:layout_below="@+id/PersonaNegocio"
         android:hint="@string/valorNegocio"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 
-    <DatePicker
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:id="@+id/fechaCierre"
-        android:startYear="2017"
-        android:layout_below="@+id/ValorNegocio"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/fecha_de_cierre"
-        android:id="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_alignBottom="@+id/fechaCierre"
-        android:layout_toStartOf="@+id/fechaCierre"
-        android:layout_alignTop="@+id/fechaCierre"
+        android:id="@+id/FechaCierre"
         android:elegantTextHeight="false"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/fecha_de_cierre" />
 
     <Spinner
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner"
-        android:layout_alignTop="@+id/textView2"
+        android:layout_height="30dp"
+        android:id="@+id/spinnerEstados"
+        android:layout_below="@+id/buttonFecha"
         android:layout_alignParentEnd="true"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_toEndOf="@+id/textView" />
+        android:layout_alignStart="@+id/buttonFecha" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -99,18 +88,28 @@
         android:text="@string/estado_del_n_negocio"
         android:id="@+id/textView2"
         android:elegantTextHeight="false"
-        android:layout_below="@+id/fechaCierre"
+        android:textAlignment="center"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="24dp"
-        android:layout_toStartOf="@+id/spinner"
-        android:textAlignment="center" />
+        android:layout_toStartOf="@+id/spinnerEstados"
+        android:layout_alignEnd="@+id/FechaCierre"
+        android:layout_below="@+id/buttonFecha" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/enviar"
         android:id="@+id/botonNegocio"
-        android:layout_below="@+id/spinner"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
+        android:layout_marginBottom="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seleccionar_fecha"
+        android:id="@+id/buttonFecha"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/ValorNegocio"
+        android:layout_toEndOf="@+id/FechaCierre" />
+
 </RelativeLayout>

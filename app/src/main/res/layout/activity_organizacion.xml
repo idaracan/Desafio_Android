@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="69dp"
-        android:id="@+id/editText"
+        android:id="@+id/DireccionOrg"
         android:hint="@string/direccionOrg"
         android:layout_below="@+id/nombreOrg"
         android:layout_alignParentStart="true"
@@ -34,8 +34,8 @@
         android:layout_height="wrap_content"
         android:inputType="phone"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
+        android:id="@+id/TelefonoOrg"
+        android:layout_below="@+id/DireccionOrg"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
         android:hint="@string/telefonoPersona" />
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/botonOrg"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/TelefonoOrg"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         android:text="@string/enviar" />

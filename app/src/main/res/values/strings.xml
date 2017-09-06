@@ -27,10 +27,20 @@
     <string name="valorNegocio">Valor</string>
     <string name="fecha_de_cierre">Fecha de Cierre</string>
     <string name="estado_del_n_negocio">Estado del \n negocio</string>
-    <!-- Vista Negocio -->
+    <string-array name="EstadosNegocio">
+        <item>No iniciado</item>
+        <item>En curso</item>
+        <item>En espera</item>
+        <item>Cancelado</item>
+    </string-array>
+    <!-- Vista Actividad-->
     <string name="tipoActividad">Tipo</string>
     <string name="descripci_n_de_la_actividad">Descripción de la Actividad</string>
     <string name="negocioActividad">Negocio</string>
-    <string name="fecha">Fecha</string>
-    <string name="hora">Hora</string>
+    <string name="fecha">Seleccionar    Fecha</string>
+    <string name="hora">Seleccionar Hora</string>
+    <string name="nombre_de_la_actividad">Nombre de la Actividad</string>
+    <string name="personaActividad">Persona</string>
+    <string name="seleccionar_fecha">Seleccionar fecha</string>
+    <string name="dd_mm_aaaa">DD/MM/AAAA</string>
 </resources>
